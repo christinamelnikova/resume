@@ -3,16 +3,13 @@ let data = document.querySelectorAll('.inputData')
 let saveButton = document.querySelector('.saveBtn')
 let openButton = document.querySelector('.openBtn')
 
-let main = document.querySelector('.mainContainer')
 
 if (localStorage.getItem("default")){
    container.innerHTML = localStorage.getItem("default");
 }
 
-
 data.forEach(inp =>{
     inp.addEventListener('input', function(){
-        console.log('kk')
         if (inp.tagName === 'INPUT')
             inp.setAttribute("value", inp.value);
         if (inp.tagName === 'TEXTAREA')
