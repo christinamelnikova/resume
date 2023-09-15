@@ -16,6 +16,11 @@
     background-color: #d2d2d2;
     padding: 20px;
     box-shadow: 20px 17px 14px 1px rgba(0, 0, 0, 0.4);
+}
+.form{
+    width: 100%;
+    height: 95%;
+    background-color: #d2d2d2;
     display: flex;
     justify-content: space-between;
 }
@@ -109,7 +114,7 @@ textarea::placeholder {
     flex-direction: column;
     justify-content: space-between;
     color: black;
-    font-family: "Arial Black";
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
     letter-spacing: 3px;
     font-weight: 900;
 }
@@ -181,4 +186,20 @@ textarea::placeholder {
 }
 .skill input[type="range"]{
     width: 50%;
+}
+.btns{
+    width: 100%;
+    height: 4%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns button{
+    height: 100%;
+    width: 45%;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    box-shadow: 3px 4px 3px 1px rgba(49, 49, 49, 0.23);
+}
+.saveBtn{
+    background-color: #ffce3d;
 }
