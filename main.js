@@ -1,4 +1,7 @@
 let container = document.querySelector('.form')
+let saveButton = document.querySelector('.saveBtn')
+const openButton = document.querySelector('.openBtn')
+
 function newInput(){
     let data = document.querySelectorAll('.inputData')
     data.forEach(inp =>{
@@ -16,19 +19,17 @@ if (localStorage.getItem("default")){
   container.innerHTML = localStorage.getItem("default");
   newInput()
 }
-
-const saveButton = document.querySelector('.saveBtn')
+newInput()
 
 saveButton.addEventListener('click', function(){
     let name = prompt('Как Вас зовут?')
     localStorage.setItem(name, container.innerHTML)
 })
 
-const openButton = document.querySelector('.openBtn')
-
 openButton.addEventListener('click', function (){
     let resume = prompt('Какое резюме открыть?')
-    if (localStorage.getItem(resume)){
+    if (localStorage.getItem(resume))
+    {
         container.innerHTML = localStorage.getItem(resume)
         newInput()
     }
